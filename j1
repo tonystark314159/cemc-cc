@@ -1,0 +1,17 @@
+with open("j1.txt") as theFile:
+    A3 = theFile.readline()
+    A2 = theFile.readline()
+    A1 = theFile.readline()
+    B3 = theFile.readline()
+    B2 = theFile.readline()
+    B1 = theFile.readline()
+
+A =  int(A3) * 3 + int(A2) * 2 + int(A1)
+B = int(B3) * 3 + int(B2) * 2 + int(B1)
+
+if A > B:
+    print("A")
+elif B > A:
+    print("B")
+else:
+    print("T")
